@@ -1,0 +1,12 @@
+资费管理系统
+com.lmt
+  entity:Cost
+  sql:CostMapper.xml
+  util:MybatisUtil
+
+映射器案例
+com.lmt
+  entity:Cost
+  sql:CostMapper.xml
+  util:MybatisUtil
+  dao:ICostDao   CostDao
