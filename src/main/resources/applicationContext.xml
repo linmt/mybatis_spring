@@ -68,21 +68,24 @@
     3 MapperFactoryBean 按照接口名创建对象
     注：要注掉上面的costDao  bean
     -->
-    <!-- 自动扫描com.lmt包和子包，将所有扫描到的Mapper接口都创建问Bean对象-->
+    <!-- 自动扫描com.lmt.dao包和子包，将所有扫描到的Mapper接口都创建问Bean对象，默认的名字是接口名首字母小写-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.lmt" />
-        <property name="annotationClass" value="com.lmt.entity.MapperBean" />
+        <property name="basePackage" value="com.lmt.dao" />
+        <!-- 不写也行，默认会自动注入-->
+        <!--<property name="sqlSessionFactory" ref="sqlSessionFactory" />-->
+        <!-- 表示带有com.lmt.entity.MybatisDao这个注解的接口才需要生成实现类-->
+        <property name="annotationClass" value="com.lmt.annotation.MybatisDao" />
     </bean>
-    <!--
-    <bean id="deptMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
-        <property name="mapperInterface" value="com.tarena.entity.DeptMapper" />
-    </bean>
-    -->
+<!--
+<bean id="deptMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+    <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    <property name="mapperInterface" value="com.tarena.entity.DeptMapper" />
+</bean>
+-->
 
 
-    <!-- 配置SqlSessionTemplate
+    <!-- 配置SqlSessionTemplate-->
     <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
         <constructor-arg index="0" ref="sqlSessionFactory"/>
-    </bean>-->
+    </bean>
 </beans>

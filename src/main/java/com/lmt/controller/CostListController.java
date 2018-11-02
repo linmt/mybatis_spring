@@ -16,6 +16,7 @@ import java.util.Map;
 /**
  * Created by 张洲徽 on 2018/10/29.
  */
+//这个案例中用不到
 @org.springframework.stereotype.Controller
 @RequestMapping("/cost")
 public class CostListController{

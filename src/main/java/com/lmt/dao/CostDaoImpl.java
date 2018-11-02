@@ -11,6 +11,7 @@ import java.util.List;
 /**
  * Created by 张洲徽 on 2018/11/1.
  */
+//这个案例中用不到
 public class CostDaoImpl  implements CostDao {
     SqlSession session= MyBatisUtil.getSqlSession();
     public void save(Cost cost) {

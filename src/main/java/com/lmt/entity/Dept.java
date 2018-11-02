@@ -3,6 +3,7 @@ package com.lmt.entity;
 /**
  * Created by 热带雨林 on 2018/10/28.
  */
+//这个案例中用不到
 public class Dept {
     private Integer deptno;
     private String dname;

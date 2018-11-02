@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Created by 热带雨林 on 2018/10/28.
  */
+//这个案例中用不到
 @org.springframework.stereotype.Controller
 public class HelloController implements Controller {
     @RequestMapping("/hello.form")

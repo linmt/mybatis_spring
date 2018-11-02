@@ -7,6 +7,7 @@ import java.sql.Timestamp;
 /**
  * Created by 张洲徽 on 2018/10/29.
  */
+//这个案例中用不到
 public class Test {
     public static void main(String[] args) throws IOException {
         SqlSession session=MyBatisUtil.getSqlSession();

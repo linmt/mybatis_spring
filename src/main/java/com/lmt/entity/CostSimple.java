@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 /**
  * Created by 热带雨林 on 2018/10/30.
  */
+//这个案例中用不到
 public class CostSimple implements Serializable{
     private Integer id;
     private String name;
