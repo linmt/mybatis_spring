@@ -3,8 +3,9 @@ package com.lmt.dao;
 import com.lmt.entity.Cost;
 import com.lmt.entity.CostSimple;
 import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
-import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 
@@ -12,15 +13,20 @@ import java.util.List;
  * Created by 张洲徽 on 2018/11/2.
  */
 //SqlSessionTemplate的使用案例，不完整，尚待补充
+@Repository
 public class MyCostDao implements CostDao {
-    @Resource(name = "sqlSessionTemplate")
-    private SqlSessionTemplate template;
 
+    private SqlSessionTemplate template;
+    @Autowired
+    public void setTemplate( SqlSessionTemplate template) {
+        this.template = template;
+    }
     public void save(Cost cost) {
         System.out.println("请求插入");
     }
 
     public List<Cost> findAll() {
+        System.out.println("使用了findAll方法");
         return template.selectList("findAll");
     }
 
