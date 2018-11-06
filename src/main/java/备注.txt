@@ -10,3 +10,5 @@ com.lmt
   sql:CostMapper.xml
   util:MybatisUtil
   dao:ICostDao   CostDao
+
+ioc包和ioc_buchong.xml、testIOC是对IOC内容的补充
