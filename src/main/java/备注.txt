@@ -12,3 +12,5 @@ com.lmt
   dao:ICostDao   CostDao
 
 ioc包和ioc_buchong.xml、testIOC是对IOC内容的补充
+
+reflection包是反射的内容
