@@ -14,4 +14,8 @@ public class Foo {
     public void hello3(){
         System.out.println("hello3");
     }
+
+    private String hello4(String name,int age){
+        return name+age;
+    }
 }
