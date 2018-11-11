@@ -11,6 +11,15 @@ com.lmt
   util:MybatisUtil
   dao:ICostDao   CostDao
 
-ioc包和ioc_buchong.xml、testIOC是对IOC内容的补充
+ioc包和ioc_buchong.xml、test包中testIOC是对IOC内容的补充
 
-reflection包是反射的内容
+反射常用方法：TestReflection、Foo
+
+Junit原型案例
+  reflection包：TestCase、ExecuteDemoMethod
+  annotation包：Demo
+
+spring原型案例
+  com.lmt.reflection.ApplicationContext
+  beans.xml
+  ReadBeans
