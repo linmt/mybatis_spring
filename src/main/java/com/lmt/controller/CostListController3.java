@@ -3,10 +3,9 @@ package com.lmt.controller;
 import com.lmt.dao.CostDao;
 import com.lmt.entity.Cost;
 import com.lmt.entity.CostSimple;
-import com.lmt.util.MyBatisUtil;
-import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -57,5 +56,10 @@ public class CostListController3{
             System.out.println(cs.getId()+"  "+cs.getName()+"  "+cs.getStatus()+"  "+cs.getCreateTime());
         }
         return "cost/cost_list3";
+    }
+    /** 全局的Attribute 所有的请求中都有 */
+    @ModelAttribute("message")
+    public String getMessage(){
+        return "通知：今天雾霾严重！";
     }
 }

@@ -23,3 +23,6 @@ spring原型案例
   com.lmt.reflection.ApplicationContext
   beans.xml
   ReadBeans
+
+补充：使用@ModelAttribute注解向JSP页面传值
+  CostListController3    cost_list3.jsp（<title>达内－NetCTOSS${message}</title>）

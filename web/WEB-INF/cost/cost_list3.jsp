@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>达内－NetCTOSS</title>
+    <title>达内－NetCTOSS${message}</title>
     <!--
         路径问题二
         当前路径是web/cost/list.form  图片的路径是：web/images/logo.png
